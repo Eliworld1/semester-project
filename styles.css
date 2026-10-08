@@ -7,12 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
-    color: #222;
+    color: #4999c8;
     line-height: 1.6;
 }
 
 header {
-    background-color: #1f2937;
+    background-color: #508ee4;
     color: white;
     padding: 20px 40px;
 }
@@ -116,12 +116,12 @@ button {
 }
 
 .expense p {
-    color: #666;
+    color: #040000;
 }
 
 footer {
     text-align: center;
-    background-color: #1f2937;
+    background-color: #4b80c9;
     color: white;
     padding: 20px;
 }
