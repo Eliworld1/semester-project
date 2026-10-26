@@ -19,3 +19,20 @@ addExpense.addEventListener("click", function () {
         const expenseItem = document.createElement("li");
         expenseItem.textContent =
             name + " - " + category + " - $" + amount.toFixed(2);
+              expenseHistory.appendChild(expenseItem);
+
+        if (amount <= 50) {
+            feedback.textContent =
+                "Expense added! This is a small expense.";
+        } else {
+            feedback.textContent =
+                "Expense added! This is a large expense.";
+        }
+
+        expenseName.value = "";
+        expenseCategory.value = "";
+        expenseAmount.value = "";
+    }
+});
+
+
