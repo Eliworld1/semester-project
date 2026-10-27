@@ -20,36 +20,26 @@
         </nav>
     </header>
 
-    <main> 
+    <section class="expense-checker">
+    <h2>Check Your Expense</h2>
+    <p>Enter an amount to add what you spent.</p>
 
-        <section id="home" class="hero">
-            <h2>Take Control of Your Spending</h2>
-            <p>
-                SpendWise helps users keep track of their expenses,
-                organize their spending, and understand where their money goes.
-            </p>
-        </section>
+    <label for="expenseAmount">Expense Amount ($):</label>
+    <input
+        type="number"
+        id="expenseAmount"
+        min="0.01"
+        step="0.01"
+        placeholder="Enter amount"
+    >
 
-        <section id="add-expense" class="expense-section">
-            <h2>Add an Expense</h2>
+    <button type="button" id="checkExpense">Check Expense</button>
 
-            <form>
-                <label for="expense-name">Expense Name</label>
-                <input type="text" id="expense-name" placeholder="Example: Groceries">
+    <p id="feedback" role="status" aria-live="polite"></p>
+</section>
 
-                <label for="category">Category</label>
-                <select id="category">
-                    <option>N/A</option>
-                    <option>Transportation</option>
-                    <option>Entertainment</option>
-                    <option>Bills</option>
-                    <option>Food/Snacks</option>
-                </select>
+<script src="script.js"></script>
 
-                <label for="amount">Amount</label>
-                <input type="number" id="amount" placeholder="0.00">
-
-                <button type="submit">Add Expense</button>
             </form>
         </section>
 
