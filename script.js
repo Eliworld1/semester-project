@@ -12,10 +12,12 @@ addExpense.addEventListener("click", function () {
     const amount = Number(expenseAmount.value);
 
     if (name === "" || category === "" ||
-        expenseAmount.value === "" || amount <= 0) {
-        feedback.textContent =
-            "Please enter an expense name, category, and valid amount.";
-    } else {
+    expenseAmount.value.trim() === "" ||
+    !Number.isFinite(amount) || amount <= 0) {
+    feedback.textContent =
+        "Please enter an expense name, category, and valid amount.";
+} else {
+
         const expenseItem = document.createElement("li");
         expenseItem.textContent =
             name + " - " + category + " - $" + amount.toFixed(2);
